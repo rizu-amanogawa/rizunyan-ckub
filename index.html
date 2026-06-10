@@ -86,21 +86,24 @@ body{
     opacity:0.85;
 }
 .gallery{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    gap:14px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:12px;
     margin-top:20px;
+    justify-items:center;
 }
 .gallery img{
     width:100%;
-    max-width:260px;
-    height:160px;
+    max-width:150px;
+    height:90px;
     object-fit:cover;
     border-radius:12px;
     border:1px solid rgba(255,255,255,0.15);
     transition:0.3s;
+}
+.gallery img:hover{
+    transform:scale(1.03);
+}
 }
 .gallery img:hover{
     transform:scale(1.03);
