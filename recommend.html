@@ -4,163 +4,79 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>今日のおすすめ動画 | りずにゃんクラブ</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+<title>今日のおすすめ</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-
+    margin:0;
     background:#000;
     color:white;
-
-    font-family:'Noto Sans JP',sans-serif;
-}
-
-header{
-
-    padding:80px 20px 40px;
-    text-align:center;
-}
-
-header h1{
-
-    font-size:42px;
-    margin-bottom:20px;
-
-    font-family:'Zen Maru Gothic',sans-serif;
-}
-
-header p{
-
-    color:#aaa;
-    line-height:1.8;
+    font-family:sans-serif;
 }
 
 .container{
-
     width:90%;
-    max-width:1000px;
-
-    margin:auto;
-    padding-bottom:100px;
+    max-width:700px;
+    margin:0 auto;
+    padding:40px 0;
+    text-align:center;
 }
 
-.video-grid{
-
-    display:grid;
-
-    grid-template-columns:1fr;
-
-    gap:30px;
+h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-.card{
+.sub{
+    color:#aaa;
+    margin-bottom:40px;
+}
 
-    background:#0d0d0d;
-
+.video-card{
+    background:#111;
     border:1px solid rgba(255,255,255,0.1);
-
-    border-radius:24px;
-
+    border-radius:20px;
     overflow:hidden;
-
-    transition:0.3s;
+    margin-bottom:30px;
 }
 
-.card:hover{
-
-    transform:translateY(-4px);
-
-    border-color:#00aaff;
-}
-
-.card img{
-
+.video-card img{
     width:100%;
-    height:220px;
-
-    object-fit:cover;
-
     display:block;
 }
 
-.card-content{
-
-    padding:24px;
+.video-info{
+    padding:20px;
 }
 
-.card-content h2{
-
-    font-size:26px;
-    margin-bottom:12px;
-
-    font-family:'Zen Maru Gothic',sans-serif;
+.video-title{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
 }
 
-.card-content p{
-
-    color:#bbb;
-
-    line-height:1.8;
-
-    margin-bottom:24px;
+.video-text{
+    color:#aaa;
+    margin-bottom:20px;
 }
 
 .watch-button{
-
     display:inline-block;
-
-    padding:14px 24px;
-
-    border-radius:14px;
-
-    background:#111;
-
-    border:1px solid rgba(255,255,255,0.15);
-
+    padding:12px 24px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.2);
     color:white;
-
     text-decoration:none;
-
-    transition:0.3s;
-}
-
-.watch-button:hover{
-
-    background:#00aaff;
-    color:black;
 }
 
 .back{
-
-    text-align:center;
-    margin-top:60px;
+    margin-top:40px;
 }
 
 .back a{
-
     color:#aaa;
     text-decoration:none;
-}
-
-footer{
-
-    text-align:center;
-
-    padding:40px 20px;
-
-    color:#666;
 }
 
 </style>
@@ -168,293 +84,110 @@ footer{
 
 <body>
 
-<header>
+<div class="container">
 
 <h1>今日のおすすめ動画</h1>
 
-<p>
-
-ニコニコ動画といえばコレ。<br>
-伝説・定番・ネット老人会セット。
-
-</p>
-
-</header>
-
-<div class="container">
-
-<div class="video-grid">
-
-<!-- 1 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/9/9" alt="">
-
-<div class="card-content">
-
-<h2>レッツゴー！陰陽師</h2>
-
-<p>
-ニコニコ黎明期の象徴。
-全てはここから始まった。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm9"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
+<div class="sub">
+毎回ランダムで1本表示されます。
 </div>
 
-<!-- 2 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/15630734/15630734" alt="">
-
-<div class="card-content">
-
-<h2>患部で止まってすぐ溶ける</h2>
-
-<p>
-魔理沙は大変なものを盗んでいきました。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm15630734"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 3 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/982882/982882" alt="">
-
-<div class="card-content">
-
-<h2>エアーマンが倒せない</h2>
-
-<p>
-ネット民なら一度は聞いたことがある。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm542936"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 4 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/918/918" alt="">
-
-<div class="card-content">
-
-<h2>魔理沙は大変なものを盗んでいきました</h2>
-
-<p>
-東方MAD文化の超原点。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm201996"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 5 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/500873/500873" alt="">
-
-<div class="card-content">
-
-<h2>思い出は億千万</h2>
-
-<p>
-ネット老人会の涙腺破壊兵器。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm36"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 6 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/72454/72454" alt="">
-
-<div class="card-content">
-
-<h2>最終鬼畜妹フランドール・S</h2>
-
-<p>
-狂気の弾幕リミックス。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm1849248"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 7 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/1715919/1715919" alt="">
-
-<div class="card-content">
-
-<h2>組曲『ニコニコ動画』</h2>
-
-<p>
-あの頃のインターネット全部盛り。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm500873"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 8 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/9556226/9556226" alt="">
-
-<div class="card-content">
-
-<h2>Nyanyanyanyanyanyanya!</h2>
-
-<p>
-謎の中毒性。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm11509720"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 9 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/1097445/1097445" alt="">
-
-<div class="card-content">
-
-<h2>男女</h2>
-
-<p>
-弾幕職人文化全盛期。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm2097776"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-<!-- 10 -->
-
-<div class="card">
-
-<img src="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/6026607/6026607" alt="">
-
-<div class="card-content">
-
-<h2>Bad Apple!! PV</h2>
-
-<p>
-影絵PVの完成形。
-</p>
-
-<a class="watch-button"
-href="https://www.nicovideo.jp/watch/sm8628149"
-target="_blank">
-
-動画を見る
-
-</a>
-
-</div>
-</div>
-
-</div>
+<div id="video-area"></div>
 
 <div class="back">
+<a href="index.html">← トップページへ戻る</a>
+</div>
 
-<a href="./index.html">
+</div>
 
-← トップページへ戻る
+<script>
+
+const videos = [
+
+{
+title:"レッツゴー！陰陽師",
+text:"ニコニコ動画を象徴する伝説級MAD。",
+url:"https://www.nicovideo.jp/watch/sm9",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/9/9"
+},
+
+{
+title:"患部で止まってすぐ溶ける",
+text:"東方MAD文化を代表する超人気動画。",
+url:"https://www.nicovideo.jp/watch/sm201996",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/201996/201996"
+},
+
+{
+title:"エアーマンが倒せない",
+text:"ネット歌曲の超定番。",
+url:"https://www.nicovideo.jp/watch/sm350170",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/350170/350170"
+},
+
+{
+title:"最終鬼畜妹フランドール・S",
+text:"東方アレンジの代表格。",
+url:"https://www.nicovideo.jp/watch/sm1849248",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/1849248/1849248"
+},
+
+{
+title:"Nyanyanyanyanyanyanya!",
+text:"ボカロ中毒ソング。",
+url:"https://www.nicovideo.jp/watch/sm11509720",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/11509720/11509720"
+},
+
+{
+title:"男女",
+text:"ニコニコ全体の祭り動画。",
+url:"https://www.nicovideo.jp/watch/sm2097776",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/2097776/2097776"
+},
+
+{
+title:"Bad Apple!! PV",
+text:"東方PVの歴史的作品。",
+url:"https://www.nicovideo.jp/watch/sm8628149",
+image:"https://nicovideo.cdn.nimg.jp/thumbnails/8628149/8628149"
+}
+
+];
+
+const randomVideo =
+videos[Math.floor(Math.random() * videos.length)];
+
+document.getElementById("video-area").innerHTML = `
+
+<div class="video-card">
+
+<img src="${randomVideo.image}">
+
+<div class="video-info">
+
+<div class="video-title">
+${randomVideo.title}
+</div>
+
+<div class="video-text">
+${randomVideo.text}
+</div>
+
+<a class="watch-button"
+href="${randomVideo.url}"
+target="_blank">
+
+動画を見る
 
 </a>
 
 </div>
-
 </div>
 
-<footer>
+`;
 
-© rizunyan club
-
-</footer>
+</script>
 
 </body>
 </html>
