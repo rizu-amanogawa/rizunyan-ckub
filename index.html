@@ -23,7 +23,7 @@ body{
         rgba(0,0,0,0.45),
         rgba(0,0,0,0.82)
     ),
-    url("IMG_2641.jpeg");
+    url("IMG_2736.jpeg");
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center top;
@@ -39,7 +39,6 @@ body{
     font-size:clamp(42px, 11vw, 72px);
     margin:0 0 20px 0;
     line-height:1.2;
-    word-break:keep-all;
 }
 .hero p{
     font-size:clamp(18px, 4vw, 28px);
@@ -129,20 +128,25 @@ body{
 /* ---------- LINK ---------- */
 .link-buttons{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     gap:20px;
     margin-top:30px;
 }
 .link-button{
-    display:inline-block;
-    padding:16px 28px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:90px;
     border:1px solid rgba(255,255,255,0.15);
-    border-radius:14px;
+    border-radius:20px;
     color:white;
     text-decoration:none;
     transition:0.3s;
     background:rgba(255,255,255,0.04);
-    font-size:20px;
+    font-size:28px;
+    box-sizing:border-box;
+    text-align:center;
 }
 .link-button:hover{
     background:white;
@@ -152,6 +156,7 @@ body{
     margin-top:30px;
     opacity:0.7;
     font-size:18px;
+    line-height:1.7;
 }
 /* ---------- FOOTER ---------- */
 footer{
@@ -262,9 +267,9 @@ footer{
     <div class="card">
         <div class="link-buttons">
             <a class="link-button"
-　　　　　　　　href="https://rizu-amanogawa.github.io/rizunyan-ckub/archive.html">
-　　　　　　　　活動履歴
-　　　　　　　　</a>
+            href="./archive.html">
+            活動履歴
+            </a>
             <a class="link-button"
             href="https://x.com/rizu45_vrc?s=11&t=kEKwr-6pD3eoYZtbXhb_TA"
             target="_blank">
